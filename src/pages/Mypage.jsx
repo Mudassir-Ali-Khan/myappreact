@@ -1,8 +1,8 @@
 import React from 'react';
-import './style.css'
-import Topbar from './Topbar';
-import Sidebar from './Sidebar';
-import MainContent from './MainContent';
+import '../styles/style.css'
+import Topbar from '../components/Topbar';
+import Sidebar from '../components/Sidebar';
+import MainContent from '../components/MainContent';
 
 function Mypage() {
     return <>
