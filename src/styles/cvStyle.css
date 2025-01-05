@@ -1,0 +1,13 @@
+.personalInfo {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.socialInfo {
+    background-color: gray;
+}
+
+.experinceInfo {
+    background-color: cadetblue;
+}
