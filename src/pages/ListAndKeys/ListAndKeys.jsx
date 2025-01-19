@@ -1,71 +1,51 @@
 import React from 'react'
-import Card from '../../components/Card/Card';
+import Table from '../../components/Table/Table';
 
 const ListAndKeys = () => {
   const names = ['rayyan', 'irfan', 'mudassir', 'ali', 'khan', 'khan'];
 
   const employees = [
     {
-       name: 'Rayyan Irfan',
-       designation: 'Software Engineer',
        image: 'https://static.vecteezy.com/system/resources/previews/043/362/843/non_2x/cartoon-boy-avatar-face-free-png.png',
+       firstname: 'Mudassir',
+       lastname: 'Ali Khan',
+       email: 'mudassir778.3@gmail.com',
+       address: 'Islamabad',
+       gender: 'Male',
     },
     {
-        name: 'Mudassir Ali Khan',
-        designation: 'Software Developer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRwpwIGtO_OR_yKNz6_cqracXagI9uhqt0cw&s',
-     },
-     {
-        name: 'John Doe',
-        designation: 'Software Testor',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pc0jhWSk63wc7aDE0uoUTdEWC1xcDVAd2Q&s',
-     },
-     {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     },
-     {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     }, {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     }, {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     }, {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     }, {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     }, {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     }, {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     }, {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     }, {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     }, {
-        name: 'David',
-        designation: 'Software Deployment Engineer',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yreia01OZM36-CqD2Qxw41mVeRsfBOeukA&s',
-     },
+       image: 'https://w7.pngwing.com/pngs/782/115/png-transparent-avatar-boy-man-avatar-vol-1-icon-thumbnail.png',
+       firstname: 'John',
+       lastname: 'Doe',
+       email: 'John.3@gmail.com',
+       address: 'London',
+       gender: 'Male',
+    },
+    {
+       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-CJFO0FM4w0y3PC7hX0UQ0dpCXmD8iXqlhA&s',
+       firstname: 'Sara',
+       lastname: 'Williams',
+       email: 'Williams778.3@gmail.com',
+       address: 'New York',
+       gender: 'Female',
+    },
+    {
+       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQASDQ45LDMwGuMOPrEjGKXZDTdFMFGojhawQ&s',
+       firstname: 'Han',
+       lastname: 'Doe',
+       email: 'Han78.3@gmail.com',
+       address: 'Lahore',
+       gender: 'Male',
+    },
+    {
+       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2u-ayfUrdVa34bKlbVNtsuCmDIPXe09NCjQ&s',
+       firstname: 'Lara',
+       lastname: 'James',
+       email: 'Lara@gmail.com',
+       address: 'Manchester',
+       gender: 'Female',
+    },
+    
   ]
 
   return (
@@ -81,12 +61,9 @@ const ListAndKeys = () => {
         })}
         <hr />
         {names.map((item, index) => <h1 key={index}>{item}</h1>)} */}
-        <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-        }}>
+        <div>
             {employees.map((employee, index) => {
-                return <Card name={employee.name} designation={employee.designation} image={employee.image} />
+                return <Table firstname={employee.firstname} lastname={employee.lastname} address={employee.address} email={employee.email} gender={employee.gender} image={employee.image} />
             })}
         </div>
     </>

@@ -1,0 +1,20 @@
+.table {
+    width: 70%;
+    border-color: gray;
+}
+
+.table img {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.badge {
+    background-color: green;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
