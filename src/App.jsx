@@ -5,6 +5,7 @@ import Cv from './pages/Cv'
 import NewCV from './pages/Props/NewCV';
 import PracticeConditionalRendering from './pages/ConditionalRendering/PracticeConditionalRendering';
 import ListAndKeys from './pages/ListAndKeys/ListAndKeys';
+import Events from './pages/Events/Events';
 
 function App() {
   return <>
@@ -13,7 +14,8 @@ function App() {
     {/* <Cv /> */}
     {/* <NewCV /> */}
     {/* <PracticeConditionalRendering /> */}
-    <ListAndKeys />
+    {/* <ListAndKeys /> */}
+    <Events />
   </>
 }
 
