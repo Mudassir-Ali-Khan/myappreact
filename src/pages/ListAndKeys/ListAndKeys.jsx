@@ -62,9 +62,7 @@ const ListAndKeys = () => {
         <hr />
         {names.map((item, index) => <h1 key={index}>{item}</h1>)} */}
         <div>
-            {employees.map((employee, index) => {
-                return <Table firstname={employee.firstname} lastname={employee.lastname} address={employee.address} email={employee.email} gender={employee.gender} image={employee.image} />
-            })}
+          <Table employees={employees} />
         </div>
     </>
   )
