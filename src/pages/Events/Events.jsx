@@ -59,7 +59,13 @@ const Events = () => {
             console.log("Input field focused")
         }} placeholder='Enter any text...' />
 
-        {/* On Blur */}
+        <input type="text" onMouseEnter={() => {
+            console.log("Hello")
+
+        }}/>
+        <input type="text" onBlur={() => {
+            console.log("Blur")
+        }}/>
     </div>
   )
 }
