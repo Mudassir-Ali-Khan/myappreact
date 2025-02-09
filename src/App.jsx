@@ -6,6 +6,8 @@ import NewCV from './pages/Props/NewCV';
 import PracticeConditionalRendering from './pages/ConditionalRendering/PracticeConditionalRendering';
 import ListAndKeys from './pages/ListAndKeys/ListAndKeys';
 import Events from './pages/Events/Events';
+import DynamicRender from './pages/DynamicRender/DynamicRender';
+import AvatarConverter from './pages/DynamicRender/AvatarConverter';
 
 function App() {
   return <>
@@ -15,7 +17,9 @@ function App() {
     {/* <NewCV /> */}
     {/* <PracticeConditionalRendering /> */}
     {/* <ListAndKeys /> */}
-    <Events />
+    {/* <Events /> */}
+    {/* <DynamicRender /> */}
+    <AvatarConverter />
   </>
 }
 
