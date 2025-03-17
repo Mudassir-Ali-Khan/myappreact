@@ -8,6 +8,7 @@ import ListAndKeys from './pages/ListAndKeys/ListAndKeys';
 import Events from './pages/Events/Events';
 import DynamicRender from './pages/DynamicRender/DynamicRender';
 import AvatarConverter from './pages/DynamicRender/AvatarConverter';
+import Time from './pages/DynamicRender/Time';
 
 function App() {
   return <>
@@ -19,7 +20,9 @@ function App() {
     {/* <ListAndKeys /> */}
     {/* <Events /> */}
     {/* <DynamicRender /> */}
-    <AvatarConverter />
+    {/* <AvatarConverter /> */}
+    <Time/>
+  
   </>
 }
 
