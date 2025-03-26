@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Mypage from './pages/Mypage';
 import PracticePage from './pages/PracticePage';
 import Cv from './pages/Cv'
@@ -9,6 +10,7 @@ import Events from './pages/Events/Events';
 import DynamicRender from './pages/DynamicRender/DynamicRender';
 import AvatarConverter from './pages/DynamicRender/AvatarConverter';
 import Time from './pages/DynamicRender/Time';
+import Todo from './pages/Todo/Todo';
 
 function App() {
   return <>
@@ -21,7 +23,8 @@ function App() {
     {/* <Events /> */}
     {/* <DynamicRender /> */}
     {/* <AvatarConverter /> */}
-    <Time/>
+    {/* <Time/> */}
+    <Todo />
   
   </>
 }

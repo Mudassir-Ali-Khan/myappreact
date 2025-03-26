@@ -1,0 +1,54 @@
+import React, { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import TrashSvg from './TrashSvg'
+
+const Todo = () => {
+  const [text, setText] = useState('');
+  const [todos, setTodos] = useState([]);
+
+  console.log(todos);
+
+  const addTodo = () => {
+    // Shallow copy and deep copy
+    // shallow copy memory address => same memory address
+    // deep copy => different memory address, diffrent values
+    const newTodo = [...todos];
+    newTodo.push(text);
+    setTodos(newTodo);
+    setText('');
+  }
+  return (
+    <main className='bg-dark text-light d-flex justify-content-center align-items-center' style={{ height: '100vh' }}>
+        <style>{`
+            ::placeholder {
+                color: gray !important;
+            }
+        `}</style>
+       <div className='rounded-3 px-3 py-5' style={{ width: '40rem', backgroundColor: '#1E1E1E' }}>
+          <h2 className='text-center'>TODO</h2>
+          <div className='d-flex gap-3 mt-5'>
+            <input type="text" onChange={(e) => {
+                setText(e.target.value);
+            }} value={text} className='form-control text-light' placeholder='Enter a task' style={{ backgroundColor: '#2C2C2C' }}/>
+            <button className='btn btn-primary' onClick={addTodo}>Add</button>
+          </div>
+        {todos.map((todo) => {
+          return <div>
+            <div className='d-flex justify-content-between align-items-center mt-4'>
+                <span>{todo}</span>
+                <button className='btn'>
+                    <TrashSvg /> 
+                </button>
+            </div>
+            <hr />
+            </div>
+        })}
+        
+       </div>
+
+       
+    </main>
+  )
+}
+
+export default Todo
