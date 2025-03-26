@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import TrashSvg from './TrashSvg'
 
 const Todo = () => {
@@ -43,10 +42,7 @@ const Todo = () => {
             <hr />
             </div>
         })}
-        
        </div>
-
-       
     </main>
   )
 }
