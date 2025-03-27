@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import TrashSvg from './TrashSvg'
 
+
+
 const Todo = () => {
   const [text, setText] = useState('');
   const [todos, setTodos] = useState([]);
@@ -16,6 +18,19 @@ const Todo = () => {
     setTodos(newTodo);
     setText('');
   }
+
+  const deleteTodo = (index) => {
+    const newTodos = [];
+    for (let i = 0; i < todos.length; i++) {
+      if (i !== index) {
+        newTodos.push(todos[i]);
+      }
+    }
+    setTodos(newTodos);
+  };
+  
+  
+
   return (
     <main className='bg-dark text-light d-flex justify-content-center align-items-center' style={{ height: '100vh' }}>
         <style>{`
@@ -31,11 +46,11 @@ const Todo = () => {
             }} value={text} className='form-control text-light' placeholder='Enter a task' style={{ backgroundColor: '#2C2C2C' }}/>
             <button className='btn btn-primary' onClick={addTodo}>Add</button>
           </div>
-        {todos.map((todo) => {
-          return <div>
+        {todos.map((todo, index) => {
+          return <div key={index}>
             <div className='d-flex justify-content-between align-items-center mt-4'>
                 <span>{todo}</span>
-                <button className='btn'>
+                <button className='btn' onClick={deleteTodo(index)}>
                     <TrashSvg /> 
                 </button>
             </div>
