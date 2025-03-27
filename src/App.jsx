@@ -11,6 +11,7 @@ import DynamicRender from './pages/DynamicRender/DynamicRender';
 import AvatarConverter from './pages/DynamicRender/AvatarConverter';
 import Time from './pages/DynamicRender/Time';
 import Todo from './pages/Todo/Todo';
+import ApiCalling from './pages/APiCalling/ApiCalling';
 
 function App() {
   return <>
@@ -24,7 +25,8 @@ function App() {
     {/* <DynamicRender /> */}
     {/* <AvatarConverter /> */}
     {/* <Time/> */}
-    <Todo />
+    {/* <Todo /> */}
+    <ApiCalling />
   
   </>
 }

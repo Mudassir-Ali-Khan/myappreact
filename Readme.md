@@ -14,3 +14,10 @@ Display this information in the form of CV.
 <!-- Create table for users having Image, firstName, lastName, email, address, Gender -->
 
 <!-- Show the users in the table by using the static data, show the badge color as per gender, if gender in male then show green otherwise show pink color -->
+
+<!-- R&D -->
+<!-- Research and Development -->
+<!-- Search for Free API, which includes images -->
+<!-- Show the data of that API into Bootstrap table -->
+<!-- Show appropiate loader -->
+<!-- Show Badges into status column -->
