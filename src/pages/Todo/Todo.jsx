@@ -50,7 +50,7 @@ const Todo = () => {
           return <div key={index}>
             <div className='d-flex justify-content-between align-items-center mt-4'>
                 <span>{todo}</span>
-                <button className='btn' onClick={deleteTodo(index)}>
+                <button className='btn' onClick={()=>{deleteTodo(index)}}>
                     <TrashSvg /> 
                 </button>
             </div>
