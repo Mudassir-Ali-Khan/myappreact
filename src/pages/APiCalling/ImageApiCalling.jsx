@@ -7,9 +7,11 @@ const ImageApiCalling = () => {
 
     const getData = async () => {
         try {
+            setLoading(true);
             const resp = await axios.get('https://fakestoreapi.com/products')
             const data = resp.data
             setList(data);
+            setLoading(false);
             // console.log(data)
         } catch (error) {
 
